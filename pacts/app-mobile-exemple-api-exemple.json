@@ -1,0 +1,77 @@
+{
+  "consumer": {
+    "name": "app-mobile-exemple"
+  },
+  "interactions": [
+    {
+      "description": "a request to list all listings",
+      "request": {
+        "method": "GET",
+        "path": "/listings"
+      },
+      "response": {
+        "body": [
+          {
+            "id": 1,
+            "number": 58,
+            "street": "Pires do Rio"
+          },
+          {
+            "id": 1,
+            "number": 58,
+            "street": "Pires do Rio"
+          },
+          {
+            "id": 1,
+            "number": 58,
+            "street": "Pires do Rio"
+          },
+          {
+            "id": 1,
+            "number": 58,
+            "street": "Pires do Rio"
+          },
+          {
+            "id": 1,
+            "number": 58,
+            "street": "Pires do Rio"
+          }
+        ],
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "matchingRules": {
+          "$.body": {
+            "match": "type",
+            "min": 5
+          },
+          "$.body[*].id": {
+            "match": "type"
+          },
+          "$.body[*].number": {
+            "match": "type"
+          },
+          "$.body[*].street": {
+            "match": "type"
+          }
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-js": {
+      "version": "10.4.1"
+    },
+    "pactRust": {
+      "ffi": "0.4.0",
+      "models": "1.0.4"
+    },
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  },
+  "provider": {
+    "name": "api-exemple"
+  }
+}

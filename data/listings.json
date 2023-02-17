@@ -1,0 +1,34 @@
+{
+    "listings": [
+     {
+        "id": 1,
+        "street": "Rio Negro",
+        "number": 22
+     },
+     {
+        "id": 2,
+        "street": "Rio Branco",
+        "number": 21
+     },
+     {
+        "id": 3,
+        "street": "Rio Azul",
+        "number": "42"
+     },
+     {
+        "id": 3,
+        "street": "Rio Verde",
+        "number": 88
+     },
+     {
+        "id": 4,
+        "street": "Rio Ouro",
+        "number": 76
+     },
+     {
+        "id": 5,
+        "street": "Rio Diamante",
+        "number": 98
+     }
+    ]
+  }
